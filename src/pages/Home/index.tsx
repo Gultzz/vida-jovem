@@ -1,4 +1,5 @@
 import React from "react";
+import { colors } from "../../utils/colors";
 import * as S from "./styles";
 
 interface ICard {
@@ -62,28 +63,54 @@ function Home() {
 
   return (
     <S.ContainerFullPage>
-      <S.CenterPage>
-        <S.ContainerSocio>
-          <S.SectionsTitle>Seja Sócio</S.SectionsTitle>
-          <S.ContainerContentSocio>
-            {cards.map((item) => (
-              <S.CardContinerSocio main={item.main}>
-                <S.CardTitle>{item?.title}</S.CardTitle>
-                <S.BenefitsContainer>
-                  {item.benefits.map((bnft) => (
-                    <S.BenefitCard>
-                      <S.BenefitText>{bnft}</S.BenefitText>
-                    </S.BenefitCard>
-                  ))}
-                </S.BenefitsContainer>
-                <S.ButtonPrice>
-                  R$ {item.price.toFixed(2).replace(".", ",")}
-                </S.ButtonPrice>
-              </S.CardContinerSocio>
-            ))}
-          </S.ContainerContentSocio>
-        </S.ContainerSocio>
-      </S.CenterPage>
+      <S.Section>
+        <S.CenterPage>
+          <S.ContainerSocio>
+            <S.SectionsTitle>Seja Sócio</S.SectionsTitle>
+            <S.ContainerContentSocio>
+              {cards.map((item) => (
+                <S.CardContinerSocio main={item.main}>
+                  <S.CardTitle>{item?.title}</S.CardTitle>
+                  <S.BenefitsContainer>
+                    {item.benefits.map((bnft) => (
+                      <S.BenefitCard>
+                        <S.BenefitText>{bnft}</S.BenefitText>
+                      </S.BenefitCard>
+                    ))}
+                  </S.BenefitsContainer>
+                  <S.ButtonPrice>
+                    R$ {item.price.toFixed(2).replace(".", ",")}
+                  </S.ButtonPrice>
+                </S.CardContinerSocio>
+              ))}
+            </S.ContainerContentSocio>
+          </S.ContainerSocio>
+        </S.CenterPage>
+      </S.Section>
+      <S.Section color={colors.purple}>
+        <S.CenterPage>
+          <S.ContainerSocio>
+            <S.SectionsTitle>Seja Sócio</S.SectionsTitle>
+            <S.ContainerContentSocio>
+              {cards.map((item) => (
+                <S.CardContinerSocio main={item.main}>
+                  <S.CardTitle>{item?.title}</S.CardTitle>
+                  <S.BenefitsContainer>
+                    {item.benefits.map((bnft) => (
+                      <S.BenefitCard>
+                        <S.BenefitText>{bnft}</S.BenefitText>
+                      </S.BenefitCard>
+                    ))}
+                  </S.BenefitsContainer>
+                  <S.ButtonPrice>
+                    R$ {item.price.toFixed(2).replace(".", ",")}
+                  </S.ButtonPrice>
+                </S.CardContinerSocio>
+              ))}
+            </S.ContainerContentSocio>
+          </S.ContainerSocio>
+        </S.CenterPage>
+      </S.Section>
     </S.ContainerFullPage>
   );
 }

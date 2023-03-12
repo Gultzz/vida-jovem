@@ -17,7 +17,13 @@ function filterCards(value: number) {
 
 export const ContainerFullPage = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+`;
+
+export const Section = styled.div<{ color?: string }>`
+  background-color: ${({ color }) => color || "#fff"};
+  width: 100%;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +41,6 @@ export const ContainerSocio = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 32px;
   align-items: center;
 `;
 
@@ -52,6 +57,7 @@ export const ContainerContentSocio = styled.div`
   gap: 32px;
   padding: 20px 48px;
   @media screen and (max-width: 1039px) {
+    width: auto;
     gap: 20px;
     padding: 20px 24px;
     grid-template-rows: 1fr 1fr 1fr;
