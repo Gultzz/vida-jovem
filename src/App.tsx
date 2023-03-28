@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Layout from "./components/layout";
 
@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/score" element={<Score />} />
-            <Route path="*" element={<h1>Page not found</h1>} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Layout>
       </BrowserRouter>

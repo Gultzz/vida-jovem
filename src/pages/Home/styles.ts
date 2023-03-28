@@ -36,7 +36,7 @@ export const CenterPage = styled.div`
   padding: 0 4%;
 `;
 
-export const ContainerSocio = styled.section`
+export const ContainerBase = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,6 +63,48 @@ export const ContainerContentSocio = styled.div`
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
+`;
+
+export const ContainerContentAbout = styled.div`
+  width: 100%;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 48px;
+`;
+
+export const ContainerContentGaleria = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 20px 48px;
+`;
+
+export const ContainerContentContato = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 20px 48px;
+`;
+
+export const ContainerImage = styled.div`
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
 `;
 
 export const CardContinerSocio = styled.div<{ main: number }>`
@@ -130,6 +172,13 @@ export const SectionsTitle = styled.p`
   align-self: flex-start;
 `;
 
+export const SectionsTitleWhite = styled.p`
+  font-size: 20px;
+  font-weight: 700;
+  align-self: flex-start;
+  color: #fff;
+`;
+
 export const CardTitle = styled.p`
   font-size: 20px;
   font-weight: 700;
@@ -140,4 +189,24 @@ export const BenefitText = styled.p`
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+`;
+
+export const ImageTitle = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+`;
+
+export const ImageText = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+`;
+
+export const AboutTitle = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+`;
+
+export const AboutText = styled.p`
+  font-size: 15px;
+  font-weight: 400;
 `;

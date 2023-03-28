@@ -12,7 +12,10 @@ function Layout({ children }: ILayout) {
 
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState(false);
 
-  function documentToScoll(e: any, id: string) {
+  async function documentToScoll(e: any, id: string) {
+    if (window.location.pathname !== "/") {
+      await navigate("/");
+    }
     e.preventDefault();
     let doc = document.getElementById(id);
     doc && doc.scrollIntoView({ behavior: "smooth" });
