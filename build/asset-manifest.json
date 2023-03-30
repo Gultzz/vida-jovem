@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.d63d89af.css",
-    "main.js": "./static/js/main.9642a752.js",
+    "main.js": "./static/js/main.5880870c.js",
     "static/media/vida_jovem_logo.png": "./static/media/vida_jovem_logo.c868181de804343b9956.png",
     "static/media/rubik-all-500-normal.woff": "./static/media/rubik-all-500-normal.d7b4fce6ed666f790c6e.woff",
     "static/media/rubik-all-600-normal.woff": "./static/media/rubik-all-600-normal.cf47e59143a7c5eaf44f.woff",
@@ -42,10 +42,10 @@
     "static/media/rubik-hebrew-300-normal.woff2": "./static/media/rubik-hebrew-300-normal.b121ff98dac6ae878394.woff2",
     "index.html": "./index.html",
     "main.d63d89af.css.map": "./static/css/main.d63d89af.css.map",
-    "main.9642a752.js.map": "./static/js/main.9642a752.js.map"
+    "main.5880870c.js.map": "./static/js/main.5880870c.js.map"
   },
   "entrypoints": [
     "static/css/main.d63d89af.css",
-    "static/js/main.9642a752.js"
+    "static/js/main.5880870c.js"
   ]
 }
