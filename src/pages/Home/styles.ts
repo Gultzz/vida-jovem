@@ -71,6 +71,9 @@ export const ContainerContentAbout = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 48px;
+  @media screen and (max-width: 1039px) {
+    padding: 20px;
+  }
 `;
 
 export const ContainerContentGaleria = styled.div`
@@ -81,6 +84,9 @@ export const ContainerContentGaleria = styled.div`
   flex-wrap: wrap;
   gap: 32px;
   padding: 20px 48px;
+  @media screen and (max-width: 1039px) {
+    padding: 20px;
+  }
 `;
 
 export const ContainerContentContato = styled.div`
@@ -90,6 +96,11 @@ export const ContainerContentContato = styled.div`
   justify-content: center;
   gap: 32px;
   padding: 20px 48px;
+  @media screen and (max-width: 1039px) {
+    flex-direction: column;
+    gap: 64px;
+    padding: 20px;
+  }
 `;
 
 export const LeftContato = styled.div`
@@ -105,7 +116,6 @@ export const RightContato = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 `;
 
 export const RightContatoContent = styled.div`
@@ -117,6 +127,10 @@ export const RightContatoContent = styled.div`
   gap: 32px;
   padding: 22px 22px;
   border-radius: 3px;
+  @media screen and (max-width: 1039px) {
+    width: 100%;
+    max-width: 480px;
+  }
 `;
 
 export const BoxContact = styled.div<{ color?: string }>`
