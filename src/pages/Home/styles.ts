@@ -86,11 +86,48 @@ export const ContainerContentGaleria = styled.div`
 export const ContainerContentContato = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
   padding: 20px 48px;
+`;
+
+export const LeftContato = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+`;
+
+export const RightContato = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+`;
+
+export const RightContatoContent = styled.div`
+  width: 86%;
+  display: flex;
+  background-color: #eee;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 22px 22px;
+  border-radius: 3px;
+`;
+
+export const BoxContact = styled.div<{ color?: string }>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  padding: 32px;
+  background-color: ${({ color }) => color || "#fff0"};
 `;
 
 export const ContainerImage = styled.div`
@@ -209,4 +246,15 @@ export const AboutTitle = styled.p`
 export const AboutText = styled.p`
   font-size: 15px;
   font-weight: 400;
+`;
+
+export const BoxText = styled.p`
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+`;
+
+export const ContactEmailTitle = styled.p`
+  font-size: 18px;
+  font-weight: 600;
 `;

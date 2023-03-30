@@ -1,6 +1,11 @@
 import React from "react";
 import { colors } from "../../utils/colors";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import MailIcon from "@mui/icons-material/Mail";
+import PlaceIcon from "@mui/icons-material/Place";
 import * as S from "./styles";
+import { MenuItem, TextField } from "@mui/material";
+import Button from "@mui/material/Button";
 
 interface ICard {
   title: string;
@@ -192,11 +197,67 @@ function Home() {
           </S.ContainerBase>
         </S.CenterPage>
       </S.Section>
-      <S.Section id="galeria" color={colors.purple}>
+      <S.Section id="contato" color={colors.purple}>
         <S.CenterPage>
           <S.ContainerBase>
             <S.SectionsTitleWhite>Contato</S.SectionsTitleWhite>
-            <S.ContainerContentContato></S.ContainerContentContato>
+            <S.ContainerContentContato>
+              <S.LeftContato>
+                <MenuItem
+                  sx={{
+                    borderRadius: "3px",
+                    overflow: "hidden",
+                    p: 0,
+                    color: "#fff",
+                    width: "240px",
+                  }}
+                >
+                  <S.BoxContact color="#2AB200">
+                    <WhatsAppIcon sx={{ color: "#fff", fontSize: 70 }} />
+                    <S.BoxText>Whatsapp</S.BoxText>
+                  </S.BoxContact>
+                </MenuItem>
+                <MenuItem
+                  sx={{
+                    borderRadius: "3px",
+                    overflow: "hidden",
+                    p: 0,
+                    color: "#fff",
+                    width: "240px",
+                  }}
+                >
+                  <S.BoxContact color="#a0a0a0">
+                    <MailIcon sx={{ color: "#fff", fontSize: 70 }} />
+                    <S.BoxText>E-mail</S.BoxText>
+                  </S.BoxContact>
+                </MenuItem>
+                <MenuItem
+                  sx={{
+                    borderRadius: "3px",
+                    overflow: "hidden",
+                    p: 0,
+                    color: "#fff",
+                    width: "240px",
+                  }}
+                >
+                  <S.BoxContact color="#A05AFD">
+                    <PlaceIcon sx={{ color: "#fff", fontSize: 70 }} />
+                    <S.BoxText>Local</S.BoxText>
+                  </S.BoxContact>
+                </MenuItem>
+              </S.LeftContato>
+              <S.RightContato>
+                <S.RightContatoContent>
+                  <S.ContactEmailTitle>Envie-nos um e-mail</S.ContactEmailTitle>
+                  <TextField label="Nome" type="text" />
+                  <TextField label="E-mail" type="email" />
+                  <TextField label="Menssagem" multiline rows={3} />
+                  <Button variant="contained" color="primary">
+                    Enviar e-mail
+                  </Button>
+                </S.RightContatoContent>
+              </S.RightContato>
+            </S.ContainerContentContato>
           </S.ContainerBase>
         </S.CenterPage>
       </S.Section>
